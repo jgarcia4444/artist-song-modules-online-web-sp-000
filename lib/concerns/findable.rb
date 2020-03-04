@@ -3,7 +3,7 @@ module Findable
   include Memorable
 
   def find_by_name(name)
-    self.all.detect{|a| a.name == name}
+    Memorable.all.detect{|a| a.name == name}
   end
 
 end
